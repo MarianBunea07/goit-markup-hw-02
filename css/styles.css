@@ -1,71 +1,154 @@
-.left-blue {
-    font-family: "Raleway", sans-serif;
+:root {
+    --primary-color: #434455;
+    --secondary-color: #2e2f42;
+    --button-background-color: #4d5ae5;
+    --visited-links: #b900b9;
+    --hover-color: #0606bd;
+    --heading-font-family: "Raleway",
+        sans-serif;
+    --text-font-family: "Roboto",
+        sans-serif;
+}
+
+/* Information about font color and font family */
+* {
+    body {
+        font-family: var(--text-font-family);
+        color: var(--primary-color);
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+.global-header .main-nav a {
+    text-decoration: none;
+}
+
+/* Information about Logo */
+.logo::before {
+    content: "WEB";
+    color: var(--button-background-color);
+    font-family: var(--heading-font-family);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16667;
+}
+
+.atribut-logo {
+    font-family: var(--heading-font-family);
     font-weight: 800;
     font-size: 18px;
     line-height: 1.16667;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4d5ae5;
+    color: var(--secondary-color);
 }
 
-.right-black {
-    font-family: "Raleway", sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.16667;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #2e2f42;
-}
-
-.global-header {
-    width: 1440px;
-    height: 72px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    line-height: 940;
-}
-.top-nav {
-list-style-type: none;
-    font-family: "Roboto", sans-serif;
+/* Information about links */
+.global-header .link-color a {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    display: inline;
+    color: var(--secondary-color);
 }
 
-.top-nav:hover {
-    background-color: #404BBF;
-    }
-    
-    p {
-        font-style: normal;
-    }
+.link-color a:visited {
+    color: var(--visited-links);
+}
 
-.contacts {
-font-family: "Roboto", sans-serif;
-    font-weight: 400;
+/* Information about contacts data */
+.global-header .contacts-data a {
+    font-size: 16px;
+    line-height: 1.5em;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.hover-link:hover a {
+    color: var(--hover-color);
+}
+
+/* Information about buttons style */
+.btn-filter {
+    border: 1px solid #e7e9fc;
+    border-radius: 4px;
+    padding: 12px 24px;
+    width: 116px;
+    height: 48px;
+    background-color: #f4f4fd;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #4d5ae5;
+    cursor: pointer;
+}
+
+.btn-filter:hover {
+    background-color: var(--button-background-color);
+    color: #fff;
+}
+
+.btn-filter:focus {
+    background-color: var(--button-background-color);
+    color: #fff;
+    outline-color: transparent;
+}
+
+/* Information about Cards */
+.project-card {
+    border: 1em solid #e7e9fc;
+    width: 360px;
+    height: 420px;
+    background: #fff;
+}
+
+/* Information about card contents */
+.card-content {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2em;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);
+}
+
+.card-content-information {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
-    line-height: 940;
 }
 
-.contacts {
-    :hover 
-            background-color: #404BBF;
-            cursor: pointer;
-}
-.buttons:hover {
-    background-color: #ffffff;
-        cursor: pointer;
+/* About footer section */
+
+.footer-section-portfolio {
+    background: #2e2f42;
 }
 
+.footer-logo::after {
+    content: "STUDIO";
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16667;
+}
 
+.footer-logo-studio {
+    font-family: var(--heading-font-family);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16667;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+}
 
-
-
+.footer-description {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+}
